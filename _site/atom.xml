@@ -4,7 +4,7 @@
  <title>leiyu</title>
  <link href="http://username.github.io/atom.xml" rel="self"/>
  <link href="http://username.github.io"/>
- <updated>2015-05-29T13:54:37+08:00</updated>
+ <updated>2015-05-29T15:28:09+08:00</updated>
  <id>http://username.github.io</id>
  <author>
    <name>leiyu</name>
@@ -14,13 +14,13 @@
  
  <entry>
    <title>Hello World</title>
-   <link href="http://username.github.io/2015/05/29/hello-world"/>
+   <link href="http://username.github.io/blog/2015/05/29/hello-world"/>
    <updated>2015-05-29T00:00:00+08:00</updated>
-   <id>http://username.github.io/2015/05/29/hello-world</id>
+   <id>http://username.github.io/blog/2015/05/29/hello-world</id>
    <content type="html">
-&lt;h1 id=&quot;hello-world&quot;&gt;hello world&lt;/h1&gt;
-
-&lt;h2 id=&quot;first-post-githubjekyll&quot;&gt;First post github+jekyll&lt;/h2&gt;
+&lt;div class=&quot;container&quot;&gt;
+	&lt;h3&gt;blog搭建记录&lt;/h3&gt;
+&lt;/div&gt;
 </content>
  </entry>
  

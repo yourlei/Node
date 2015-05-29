@@ -2,11 +2,10 @@
 layout: post
 title: "Hello World"
 description: "first post"
-category: "test"
-tags: ['hello' 'jekyll']
+category: "blog"
+tags: [hello jekyll]
 ---
 {% include JB/setup %}
-
-#hello world
-
-##First post github+jekyll
+<div class="container">
+	<h3>blog搭建记录</h3>
+</div>

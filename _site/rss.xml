@@ -5,20 +5,20 @@
         <description>leiyu - leiyu</description>
         <link>http://username.github.io</link>
         <atom:link href="http://username.github.io/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Fri, 29 May 2015 13:54:37 +0800</lastBuildDate>
-        <pubDate>Fri, 29 May 2015 13:54:37 +0800</pubDate>
+        <lastBuildDate>Fri, 29 May 2015 15:28:09 +0800</lastBuildDate>
+        <pubDate>Fri, 29 May 2015 15:28:09 +0800</pubDate>
         <ttl>60</ttl>
 
 
         <item>
                 <title>Hello World</title>
                 <description>
-&lt;h1 id=&quot;hello-world&quot;&gt;hello world&lt;/h1&gt;
-
-&lt;h2 id=&quot;first-post-githubjekyll&quot;&gt;First post github+jekyll&lt;/h2&gt;
+&lt;div class=&quot;container&quot;&gt;
+	&lt;h3&gt;blog搭建记录&lt;/h3&gt;
+&lt;/div&gt;
 </description>
-                <link>http://username.github.io/2015/05/29/hello-world</link>
-                <guid>http://username.github.io/2015/05/29/hello-world</guid>
+                <link>http://username.github.io/blog/2015/05/29/hello-world</link>
+                <guid>http://username.github.io/blog/2015/05/29/hello-world</guid>
                 <pubDate>Fri, 29 May 2015 00:00:00 +0800</pubDate>
         </item>
 
