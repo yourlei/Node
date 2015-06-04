@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Leiyu</title>
-  <meta name="description" content="前端博客
-">
+  <title>linux命令学习笔记</title>
+  <meta name="description" content="1、新建用户$ useradd [options] uername	$ adduser username	注：这两个命令都可以创建新用户，adduser会自动完成新用户的基本设置，所以adduser较适合初学者使用;useradd命令参数：	  	  	  	如：  	$ useradd -d me	//则会新建...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/">
+  <link rel="canonical" href="http://yourdomain.com/linux/command/2015/06/04/linux%E5%91%BD%E4%BB%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html">
   <link rel="alternate" type="application/rss+xml" title="Leiyu" href="http://yourdomain.com/feed.xml" />
 </head>
 
@@ -59,25 +58,54 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <div class="post">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title">linux命令学习笔记</h1>
+    <p class="post-meta">
+    	Jun 4, 2015
+    </p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Jun 4, 2015</span>
+  <article class="post-content">
+    <h5>1、新建用户</h5>
+<!-- 高亮显示背景，用于标识代码块 -->
 
-        <h2>
-          <a class="post-link" href="/linux/command/2015/06/04/linux%E5%91%BD%E4%BB%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html">linux命令学习笔记</a>
-        </h2>
-      </li>
-    
-  </ul>
-  <h1>
-    
-  </h1>
-  <!-- <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p> -->
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">useradd</span> <span class="o">[</span><span class="n">options</span><span class="o">]</span> <span class="n">uername</span>	
+<span class="err">$</span> <span class="n">adduser</span> <span class="n">username</span></code></pre></div>
+
+<section>
+	注：这两个命令都可以创建新用户，adduser会自动完成新用户的基本设置，所以adduser较适合初学者使用;<br />
+useradd命令参数：<br />	
+  	<img src="/images/useradd.png" alt="useradd command" />
+  	<br />
+  	如：<br />
+  	<pre>
+$ useradd -d me	//则会新建一个me用户，并会在home目录下建立一个me目录，作为用户me的主目录
+
+$ passwd me	
+//为用户me设置密码，执行这个命令需要root权限，可以切换到root或在命令前加 suod（表示以超级用户身份执行）
+  	</pre> 
+</section>
+<h5>2、显示当前用户</h5>
+<pre>$ who am i</pre>
+<h5>3、删除/切换 用户</h5>
+<pre>
+$ userdel -r username
+$ su username
+</pre>
+<h4>网络类</h4>
+<h5>查看网络信息</h5>
+<pre>$ ifconfig [options]</pre>
+<h5>设置ip</h5>
+<pre>$ ifconfig eth0 youripaddress netmask yourmask</pre>
+<h5>关闭防火墙</h5>
+<pre>$ iptables -F</pre>
+
+<!-- 引用图片 -->
+<!-- <img src="/images/red.png" alt=""> -->
+
+  </article>
 
 </div>
 
