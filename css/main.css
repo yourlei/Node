@@ -94,7 +94,7 @@ blockquote {
  */
 pre,
 code {
-  width: 700px;
+  /*width: 700px;*/
   font-size: 15px;
   color: #FFF;
   border: 1px solid #e8e8e8;
