@@ -20,7 +20,6 @@
     <header class="site-header">
 
   <div class="wrapper">
-
     <a class="site-title" href="/">Leiyu</a>
 
     <nav class="site-nav">
@@ -58,17 +57,18 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="post">
+        <div>
+	<div class="post">
+		<header class="post-header">
+		  <span class="rightBar">leiyu</span>
+		  <h1 class="post-title">linux命令学习笔记</h1>
+		  <p class="post-meta">
+		  	Jun 4, 2015
+		  </p>
+		</header>
 
-  <header class="post-header">
-    <h1 class="post-title">linux命令学习笔记</h1>
-    <p class="post-meta">
-    	Jun 4, 2015
-    </p>
-  </header>
-
-  <article class="post-content">
-    <h5>1、新建用户</h5>
+		<article class="post-content">
+		  <h5>1、新建用户</h5>
 <!-- 高亮显示背景，用于标识代码块 -->
 
 <div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">useradd</span> <span class="o">[</span><span class="n">options</span><span class="o">]</span> <span class="n">uername</span>	
@@ -105,8 +105,42 @@ $ su username
 <!-- 引用图片 -->
 <!-- <img src="/images/red.png" alt=""> -->
 
-  </article>
+		</article>
+	</div>  
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'leiyu';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'leiyu';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+	<div id="recent_comments">
+    <h3>Recent Comments</h3>
 
+    <div class="comment_list">
+        <script type="text/javascript"
+                src="http://leiyu.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200">
+        </script>
+    </div>
+</div>
 </div>
 
       </div>
@@ -121,7 +155,7 @@ $ su username
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
-          <li>Leiyu</li>
+          <!-- <li>Leiyu</li> -->
           <li><a href="mailto:yourlin127@gmail.com">yourlin127@gmail.com</a></li>
         </ul>
       </div>
@@ -160,7 +194,7 @@ $ su username
       </div>
 
       <div class="footer-col  footer-col-3">
-        <p class="text">前端博客
+        <p class="text">学习|记录|分享前端技术
 </p>
       </div>
     </div>

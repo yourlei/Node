@@ -4,8 +4,13 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+<article>
+	<h4>关于我</h4>
+	<p>
+		<span class="mytag tagtitle">Tag：</span>
+		<span class="mytag">90后</span>
+		<span class="mytag">文艺青年</span>
+		<span class="mytag">学生党</span>
+		<span class="mytag">IT民工</span>
+	</p>
+</article>
