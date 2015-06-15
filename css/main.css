@@ -94,7 +94,6 @@ blockquote {
  */
 pre,
 code {
-  width: 700px;
   font-size: 15px;
   color: #FFF;
   border: 1px solid #e8e8e8;
@@ -350,6 +349,10 @@ pre {
   line-height: 32px;
   padding: 0px 5px 0px 15px;
   background: #99b9c4; }
+  @media screen and (max-width: 480px) {
+    .post-meta {
+      width: 120px;
+      font-size: 13px; } }
 
 .post-link {
   display: inline-block;
@@ -374,6 +377,9 @@ pre {
   font-size: 18px;
   box-sizing: border-box;
   background: #f2eeec; }
+  @media screen and (max-width: 480px) {
+    .titleLine {
+      font-size: 14px; } }
 
 /**
  * Posts
