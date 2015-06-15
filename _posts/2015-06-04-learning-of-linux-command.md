@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "linux命令学习笔记"
-date:   2015-06-04 13:19:08
-categories: linux command
+title:  "linux 命令学习笔记一"
+date:   2015-06-04
+description: linux 命令学习   
+keywords: linux command learning
 ---
 <h5>1、新建用户</h5>
 <!-- 高亮显示背景，用于标识代码块 -->
@@ -13,7 +14,7 @@ $ adduser username
 <section>
 	注：这两个命令都可以创建新用户，adduser会自动完成新用户的基本设置，所以adduser较适合初学者使用;<br>
 useradd命令参数：<br>	
-  	<img src="{{ site.baseurl }}/images/useradd.png" alt="useradd command">
+  	<img src="{{ site.baseurl }}/images/study/useradd.png" alt="useradd command">
   	<br>
   	如：<br>
   	<pre>

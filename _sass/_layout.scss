@@ -2,11 +2,10 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     padding-bottom: 2px;
     min-height: 56px;
-
+    background: url(../images/headbg.jpg) left top no-repeat;
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -27,6 +26,7 @@
     -moz-border-radius: 80px;
     border-radius: 80px;
     background: #F66;
+    border: 2px solid #FFF;
     transition: text-shadow .4s ease-out;
     /* &,
     &:visited {
@@ -210,7 +210,7 @@
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit;
+        /* margin-bottom: $spacing-unit; */
     }
 }
 /*2015-6-5 书签*/
@@ -243,27 +243,38 @@
     }
 }
 .post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
+    width: 150px;
+    color: #FFF;
+    display: inline-block;
+    line-height: 32px;
+    padding: 0px 5px 0px 15px;  
+    background: #99b9c4;
 }
 
 .post-link {
-    display: block;
-    font-size: 20px;
+    display: inline-block;  
+    color: #666;
+    text-indent: 8px;
 }
-.post-link::before{
+.post-meta::before{
     content: "";
     width: 16px;
     height: 16px;
     display: inline-block;
     color: transparent;
     margin-right: 8px;
-    background: #F66;
+    background: #FFF;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-
+/* 2015-06-15 line of post title */
+.titleLine{
+    max-height: 32px;
+    font-size: 18px;
+    box-sizing: border-box;
+    background: #f2eeec
+}
 
 /**
  * Posts
@@ -277,8 +288,7 @@
     color: rgba(0,0,0,0.8);
     letter-spacing: -1px;
     line-height: 1.2;
-    /*text-indent: 15px;*/
-    /*box-shadow: 2px 2px 10px #666;*/
+     
     @include media-query($on-laptop) {
         font-size: 36px;
     }
@@ -288,7 +298,7 @@
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 32px;
+        font-size: 18px;
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -319,6 +329,7 @@
     font-style: italic;
     text-align: center;
     display: inline-block;
+    border: 1px solid #CCC;
     border-radius: 3px;
     margin-right: 3px;
     -webkit-box-shadow: 2px 2px 8px #6382FC;
@@ -337,6 +348,7 @@
     font-size: 18px;
     color: #FFF;
     margin-right: 15px;
+    border: none;
     -webkit-box-shadow: 2px 2px 8px #666;
     -moz-box-shadow: 2px 2px 8px #666;
     box-shadow: 2px 2px 8px #666;

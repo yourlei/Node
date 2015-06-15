@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>linux命令学习笔记</title>
-  <meta name="description" content="1、新建用户$ useradd [options] uername	$ adduser username	注：这两个命令都可以创建新用户，adduser会自动完成新用户的基本设置，所以adduser较适合初学者使用;useradd命令参数：	  	  	  	如：  	$ useradd -d me	//则会新建...">
+  <title>大三下-回顾</title>
+  <meta name="description" content="时间过得真快，现在想来，似乎开学也不过就在昨天而已。然而，记忆终归只是记忆，看看手机上显示的日期，你就会发现，噢，原来是六月份了。">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/linux/command/2015/06/04/linux%E5%91%BD%E4%BB%A4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html">
+  <link rel="canonical" href="http://yourdomain.com/2015/06/15/my-life1.html">
   <link rel="alternate" type="application/rss+xml" title="Leiyu" href="http://yourdomain.com/feed.xml" />
 </head>
 
@@ -46,6 +46,10 @@
           
         
           
+          <a class="page-link" href="/Journal/">Journal</a>
+          
+        
+          
         
       </div>
     </nav>
@@ -61,49 +65,26 @@
 	<div class="post">
 		<header class="post-header">
 		  <span class="rightBar">leiyu</span>
-		  <h1 class="post-title">linux命令学习笔记</h1>
+		  <h1 class="post-title">大三下-回顾</h1>
 		  <p class="post-meta">
-		  	Jun 4, 2015
+		  	Jun 15, 2015
 		  </p>
 		</header>
 
 		<article class="post-content">
-		  <h5>1、新建用户</h5>
-<!-- 高亮显示背景，用于标识代码块 -->
+		  <p>时间过得真快，现在想来，似乎开学也不过就在昨天而已。然而，记忆终归只是记忆，看看手机上显示的日期，你就会发现，噢，原来是六月份了。</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">useradd</span> <span class="o">[</span><span class="n">options</span><span class="o">]</span> <span class="n">uername</span>	
-<span class="err">$</span> <span class="n">adduser</span> <span class="n">username</span></code></pre></div>
+<p>在我的记忆里，六月是迎来高考时间，是接近学期末的时间，当然也意味着一年的十二个月已过了一半。以前工作的时候感觉时间过得好慢，总是时不时的拿出手机看看，心里一直惦记着想早点下班。回到学校后，每天的时间都显得很有规律。早上八点前吃完早餐，就去上课；下课铃响，冲到楼下，骑上单车，生怕没饭吃一样，奔向饭堂。一顿饭下来，回到宿舍，基本都是这个时间，十二点三十多分。因为下午上课时间比较早，渐渐的也就习惯了中午在桌子上趴会，便去上课。这学期，前八周下午的课比较少，后面开始试验课后，上下午的课都比较多一点。晚上的时间大多是自由支配，我有时会去图书馆，有时在宿舍。但去图书馆也好，在宿舍也罢，到了十二点，关灯睡觉，一天也就这样过去了。写到这里，忽然想起朱自清先生的《匆匆》，在你吃饭的时候，洗手的时候，睡觉的时候，时间悄悄的溜走了。现在看到这些文字，感觉好像不一样了，这些描述变得清晰了许多，真实了许多。要时在以前，读到这样的文字，我可能并不会有什么感觉。不会感觉到时间过得很快，会给自己那种紧张感、压迫感。这或许是长大了，亦或是快毕业了。我想是前者，哈哈！</p>
 
-<section>
-	注：这两个命令都可以创建新用户，adduser会自动完成新用户的基本设置，所以adduser较适合初学者使用;<br />
-useradd命令参数：<br />	
-  	<img src="/images/useradd.png" alt="useradd command" />
-  	<br />
-  	如：<br />
-  	<pre>
-$ useradd -d me	//则会新建一个me用户，并会在home目录下建立一个me目录，作为用户me的主目录
+<p>这学期的课程不是特别紧凑，相互间的关联不多，主要是对前期所学的知识的一个升华，结合。编译原理、操作系统感觉学的不太好，尤其是编译原理，感觉讲的太抽象，不易于理解。Linux操作系统讲的偏于理论，当然对于操作系统，通过理论学习，是很有必要的。只有深入的理解系统的运行机制，比如进程，内存空间，文件系统等等，遇到问题时才能更好、更准确的找到解决方法。嵌入式和组网掌握的不怎么好，主要是觉得在这方面没什么兴趣。当然，课外接触了下Node.js、sass和git，这些和web前端开发有关，前端要学的知识很多。
+有时候，真的得要好好的梳理一下所学的东西，看看自己掌握了那些部分，还有哪些知识是需要去学习的，制定一个完整的学习计划。</p>
 
-$ passwd me	
-//为用户me设置密码，执行这个命令需要root权限，可以切换到root或在命令前加 suod（表示以超级用户身份执行）
-  	</pre> 
-</section>
-<h5>2、显示当前用户</h5>
-<pre>$ who am i</pre>
-<h5>3、删除/切换 用户</h5>
-<pre>
-$ userdel -r username
-$ su username
-</pre>
-<h4>网络类</h4>
-<h5>查看网络信息</h5>
-<pre>$ ifconfig [options]</pre>
-<h5>设置ip</h5>
-<pre>$ ifconfig eth0 youripaddress netmask yourmask</pre>
-<h5>关闭防火墙</h5>
-<pre>$ iptables -F</pre>
+<p>过完这个暑假，就大四了。大四，这是要毕业、找工作的节奏，感觉亚历山大啊！好吧，就写到这了。</p>
 
-<!-- 引用图片 -->
-<!-- <img src="/images/red.png" alt=""> -->
+<p>七月份要看的书1、《HTML5 Canvas 核心技术》、2、《Pro Git》</p>
+
+<p>完</p>
+
 
 		</article>
 	</div>  

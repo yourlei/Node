@@ -95,7 +95,7 @@ a {
     -moz-transition: color .4s ease-in-out;
     transition: color .4s ease-in-out;
     &:visited {
-        color: darken($brand-color, 15%);
+        /*color: darken($brand-color, 15%);*/
     }
 
     &:hover {

@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Leiyu</title>
-  <meta name="description" content="学习|记录|分享前端技术
-">
+  <title>Git 学习笔记一</title>
+  <meta name="description" content="前几天看了下《Pro Git》这本书，简单的了解关于Git的知识，在这里简单的记录一下书中的一些内容。1、配置用户信息$ git config -global user.name "username"">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/">
+  <link rel="canonical" href="http://yourdomain.com/2015/06/15/learn-of-git.html">
   <link rel="alternate" type="application/rss+xml" title="Leiyu" href="http://yourdomain.com/feed.xml" />
 </head>
 
@@ -62,42 +61,88 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <div>
+	<div class="post">
+		<header class="post-header">
+		  <span class="rightBar">leiyu</span>
+		  <h1 class="post-title">Git 学习笔记一</h1>
+		  <p class="post-meta">
+		  	Jun 15, 2015
+		  </p>
+		</header>
 
-  <h1 class="page-heading">
-    Posts
-    <hr>
-  </h1>
+		<article class="post-content">
+		  <p>前几天看了下《Pro Git》这本书，简单的了解关于Git的知识，在这里简单的记录一下书中的一些内容。</p>
+<h5>1、配置用户信息</h5>
+<pre>
+$ git config -global user.name "username"
 
-  <ul class="post-list">
-    
-      <li>
-        <h2 class="titleLine">
-            <span class="post-meta">Jun 15, 2015</span>
-            <a class="post-link" href="/2015/06/15/my-life1.html">大三下-回顾</a>
-        </h2>
-      </li>
-    
-      <li>
-        <h2 class="titleLine">
-            <span class="post-meta">Jun 15, 2015</span>
-            <a class="post-link" href="/2015/06/15/learn-of-git.html">Git 学习笔记一</a>
-        </h2>
-      </li>
-    
-      <li>
-        <h2 class="titleLine">
-            <span class="post-meta">Jun 4, 2015</span>
-            <a class="post-link" href="/2015/06/04/learning-of-linux-command.html">linux 命令学习笔记一</a>
-        </h2>
-      </li>
-    
-  </ul>
-  <h1>
-    
-  </h1>
-  <!-- <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p> -->
+$ git config -global user.email "email"	
+//这两条命令可以设置用户名和电子邮件地址，每次git提交时都会引用这两条信息，记录谁提交了信息
+//相当于设置用户的身份信息，这些配置信息可在用户主目录的.gitconfig文件中看到
+</pre>
 
+<h5>2、设置文本编辑器</h5>
+<pre>
+$ git config --global core.editor "your edit"
+
+$ git config --global core.editor vim //比如设置vim为git的默认文本编辑器
+</pre>
+
+<h5>3、查看配置信息</h5>
+<pre>
+$ git config --list //该命令会输出你设置的用户名、email、默认编辑器等等信息
+
+$ git config user.name //这种方式可以直接查看某个环境变量的设置
+</pre>
+
+<h5>4、获取帮助信息</h5>
+<pre>
+$ git --help
+</pre>
+
+<h5>5、初始化新仓库</h5>
+<pre>
+$ git init	//该命令是在新项目中使用git管理时使用，初始化后会生成一个.git目录
+		//通过git clone  得到的目录中，一般已经包含.git目录
+</pre>
+
+		</article>
+	</div>  
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'leiyu';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'leiyu';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+	<div id="recent_comments">
+    <h3>Recent Comments</h3>
+
+    <div class="comment_list">
+        <script type="text/javascript"
+                src="http://leiyu.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200">
+        </script>
+    </div>
+</div>
 </div>
 
       </div>

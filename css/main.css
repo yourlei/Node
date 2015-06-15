@@ -71,7 +71,7 @@ a {
   -moz-transition: color .4s ease-in-out;
   transition: color .4s ease-in-out; }
   a:visited {
-    color: #1756a9; }
+    /*color: darken($brand-color, 15%);*/ }
   a:hover {
     color: #111;
     /*text-decoration: underline;*/ }
@@ -94,7 +94,7 @@ blockquote {
  */
 pre,
 code {
-  /*width: 700px;*/
+  width: 700px;
   font-size: 15px;
   color: #FFF;
   border: 1px solid #e8e8e8;
@@ -153,10 +153,10 @@ pre {
  * Site header
  */
 .site-header {
-  border-top: 5px solid #424242;
   border-bottom: 1px solid #e8e8e8;
   padding-bottom: 2px;
   min-height: 56px;
+  background: url(../images/headbg.jpg) left top no-repeat;
   position: relative; }
 
 .site-title {
@@ -175,6 +175,7 @@ pre {
   -moz-border-radius: 80px;
   border-radius: 80px;
   background: #F66;
+  border: 2px solid #FFF;
   transition: text-shadow .4s ease-out;
   /* &,
   &:visited {
@@ -313,7 +314,7 @@ pre {
   margin-left: 0;
   list-style: none; }
   .post-list > li {
-    margin-bottom: 30px; }
+    /* margin-bottom: $spacing-unit; */ }
 
 /*2015-6-5 书签*/
 .rightBar {
@@ -343,24 +344,36 @@ pre {
     clear: both; }
 
 .post-meta {
-  font-size: 14px;
-  color: #828282; }
+  width: 150px;
+  color: #FFF;
+  display: inline-block;
+  line-height: 32px;
+  padding: 0px 5px 0px 15px;
+  background: #99b9c4; }
 
 .post-link {
-  display: block;
-  font-size: 20px; }
+  display: inline-block;
+  color: #666;
+  text-indent: 8px; }
 
-.post-link::before {
+.post-meta::before {
   content: "";
   width: 16px;
   height: 16px;
   display: inline-block;
   color: transparent;
   margin-right: 8px;
-  background: #F66;
+  background: #FFF;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg); }
+
+/* 2015-06-15 line of post title */
+.titleLine {
+  max-height: 32px;
+  font-size: 18px;
+  box-sizing: border-box;
+  background: #f2eeec; }
 
 /**
  * Posts
@@ -372,9 +385,7 @@ pre {
   font-size: 42px;
   color: rgba(0, 0, 0, 0.8);
   letter-spacing: -1px;
-  line-height: 1.2;
-  /*text-indent: 15px;*/
-  /*box-shadow: 2px 2px 10px #666;*/ }
+  line-height: 1.2; }
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }
@@ -382,7 +393,7 @@ pre {
 .post-content {
   margin-bottom: 30px; }
   .post-content h2 {
-    font-size: 32px; }
+    font-size: 18px; }
     @media screen and (max-width: 800px) {
       .post-content h2 {
         font-size: 28px; } }
@@ -405,6 +416,7 @@ pre {
   font-style: italic;
   text-align: center;
   display: inline-block;
+  border: 1px solid #CCC;
   border-radius: 3px;
   margin-right: 3px;
   -webkit-box-shadow: 2px 2px 8px #6382FC;
@@ -421,6 +433,7 @@ pre {
   font-size: 18px;
   color: #FFF;
   margin-right: 15px;
+  border: none;
   -webkit-box-shadow: 2px 2px 8px #666;
   -moz-box-shadow: 2px 2px 8px #666;
   box-shadow: 2px 2px 8px #666;
