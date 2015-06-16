@@ -16,7 +16,7 @@ keywords: Leiyu, GitHub, Jekyll, web development, Works, Archives, css, html, ja
     {% for post in site.posts %}
       <li>
         <h2 class="titleLine">
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <span class="post-meta">{{ post.date | date: "%b , %Y" }}</span>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
       </li>
