@@ -249,7 +249,7 @@
     display: inline-block;
     line-height: 32px;
     padding: 0px 5px 0px 15px;  
-    background: #99b9c4;
+    background: #666;
     @include media-query($on-palm) {
          width: 120px;
          font-size: 13px
