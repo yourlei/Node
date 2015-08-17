@@ -1,0 +1,26 @@
+{
+  "name": "imooc",
+  "version": "1.0.0",
+  "description": "create a moive site by node + express + mongo",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "mongodb": "^1.4.39",
+    "moment": "^2.10.6",
+    "jade": "^1.11.0",
+    "mongoose": "^4.1.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongo"
+  ],
+  "author": "leiyu",
+  "license": "ISC"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Imooc-movie",
+  "main": "app.js",
+  "version": "0.0.1",
+  "authors": [
+    "leiyu <yourlin127@gmail.com>"
+  ],
+  "description": "create movie site by node + express + mongo",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "node",
+    "mongo"
+  ],
+  "license": "MIT",
+  "homepage": "leiyou.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
